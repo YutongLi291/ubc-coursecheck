@@ -24,8 +24,8 @@ from twilio.rest import Client
 def notify():
   print("Seat available. " + courseURL)
   webbrowser.open_new(courseURL)
-  account_sid = 'ACf8849565daa31a8cab50e4147eb3967c'
-  auth_token = 'ad636dc5b678806accf36fe795f524ad'
+  account_sid = 'YOUR TWILIO SID'
+  auth_token = 'YOUR AUTH TOKEN'
   client = Client(account_sid, auth_token)
 
   message = client.messages.create(
